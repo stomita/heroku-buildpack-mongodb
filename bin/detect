@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "MongoDB"
+exit 0
