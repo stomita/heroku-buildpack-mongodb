@@ -26,5 +26,6 @@ mkdir -p $BUILD_DIR/vendor
 tar zxf $CACHE_DIR/$FILE_NAME -C $BUILD_DIR/vendor
 mv $BUILD_DIR/vendor/$PACKAGE_NAME $BUILD_DIR/vendor/mongodb
 mkdir -p $BUILD_DIR/bin
-ln -s $BUILD_DIR/vendor/mongodb/bin/* $BUILD_DIR/bin
+cd $BUILD_DIR/bin
+ln -s ../vendor/mongodb/bin/* .
 
