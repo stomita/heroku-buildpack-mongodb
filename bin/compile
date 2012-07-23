@@ -13,7 +13,7 @@ VERSION="2.0.6"
 # package
 PACKAGE_NAME="mongodb-${OS}-${ARCH}-${VERSION}"
 FILE_NAME="${PACKAGE_NAME}.tgz"
-MONGODB_ARCHIVE="http://fastdl.mongodb.org/${OS}/${FILENAME}"
+MONGODB_ARCHIVE="http://fastdl.mongodb.org/${OS}/${FILE_NAME}"
 
 mkdir -p $CACHE_DIR
 if ! [ -e $CACHE_DIR/$FILE_NAME ]; then
